@@ -22,7 +22,7 @@ for (let y = 0; y < cookies.length; y++) {
 }
 
 // conjunction_function
-console.log("conjunction function");
+console.log("Mod Squad");
 
 const ModSquad = {
     "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
@@ -38,5 +38,15 @@ ModSquad.members.forEach(member => {
      HTMLRepresentation += `<div>${member}</div>`
 })
 
-
 document.getElementById("display-container-2").innerHTML = HTMLRepresentation
+
+console.log("conjunction function")
+
+let conjunction = function (firstWord, secondWord) {
+    let conjoinedWord = `${firstWord} ${secondWord}`
+    return conjoinedWord;
+}
+
+let bloop = conjunction("Master", "Card")
+console.log(conjunction("Master", "Card"))
+document.getElementById("display-container-3").innerHTML += bloop
