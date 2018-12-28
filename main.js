@@ -22,6 +22,7 @@ for (let y = 0; y < cookies.length; y++) {
 }
 
 // conjunction_function
+console.log("");
 console.log("Mod Squad");
 
 const ModSquad = {
@@ -40,6 +41,7 @@ ModSquad.members.forEach(member => {
 
 document.getElementById("display-container-2").innerHTML = HTMLRepresentation
 
+console.log("");
 console.log("conjunction function")
 
 let conjunction = function (firstWord, secondWord) {
@@ -50,3 +52,33 @@ let conjunction = function (firstWord, secondWord) {
 let bloop = conjunction("Master", "Card")
 console.log(conjunction("Master", "Card"))
 document.getElementById("display-container-3").innerHTML += bloop
+
+console.log("");
+console.log("simon says")
+const locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
+
+let x = 0;
+
+for (let k = 0; k < locations.length; k++) {
+    let currentLocation = locations[k];
+    // console.log("currentLocation " + currentLocation)
+    // console.log("currentLocation[0] " + currentLocation[0])
+    if (currentLocation[0] < 2) {(console.log(`${currentLocation} good location`))}
+    else if (currentLocation[0] = 2) {
+
+        // let invalidLocation = true
+        console.log(`location ${currentLocation} is invalid `);
+        x++;
+    }
+    // if (invalidLocation) {
+    // }
+
+    /*
+    Since k is used as the loop counter, it will be the
+    total number of locations, not the invalid ones. You
+    need to fix this somehow.
+    */
+   console.log(`There were ${x} invalid locations`)
+}
+
+document.getElementById("display-container-4").innerHTML += "There are two separate scoping issues in this code. Remember, for and if are their own block scopes and if something is declared with let or const then that variable only exists in that scope."
